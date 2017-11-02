@@ -1,0 +1,310 @@
+/*
+Theme Name: Custom Bootstrap Landing Page
+Theme URI: http://www.m3digital.herokuapp.com
+Description: A custom landing page theme to be used on the Ralph A. Celestin personal website <a href='http://ralphcelestin.com/'</a>.
+Author: Bobby Mullins
+Author URI: http://www.m3digital.herokuapp.com
+Version: 1.0
+Tags: responsive, custom, bootstrap
+
+License: N/A
+License URI: N/A
+
+This simple theme was custom built by M3Digital using Bootstrap
+*/
+
+
+/* Main Content Styling */
+body {
+    max-height: 100vh; 
+}
+
+.main_landing {
+    /*background-image: url('images/ralph_celestin_landing_image.png'); */
+    background-repeat: no-repeat; 
+    background-position: top center; 
+    background-size: cover; 
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+    height: 100vh; 
+}
+
+/* Navbar */
+
+.navbar-default {
+    background-color: transparent; 
+    background-image: none; 
+    border: none; 
+    border-radius: 0; 
+}
+.navbar-header {
+    float: none;
+}
+.navbar-toggle {
+    display: block;
+}
+
+.navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    margin-left: 5%; 
+}
+.navbar-collapse.collapse {
+    display: none!important;
+}
+.navbar-nav {
+    float: none!important;
+    margin: 7.5px -15px;
+}
+.navbar-nav>li {
+    float: none;
+}
+.navbar-nav>li>a { 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black; 
+    font-size: 1.5em; 
+    font-weight: 600; 
+    width: 10%; 
+    margin-left: 45%; 
+}
+
+/*
+.navbar-default .navbar-nav>li>a:hover {
+    text-decoration: underline; 
+}
+*/
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: black;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+.navbar-collapse.collapse.in {
+    background-color: #fff; 
+    display: block !important; 
+    opacity: .9; 
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff; 
+}
+
+.navbar-toggle {
+    border: 2px solid #fff; 
+    border-radius: 100%; 
+    margin-top: 1%; 
+}
+
+.icon-bar {
+    background-color: #fff; 
+}
+
+.social_icons {
+    margin-top: 1%; 
+    margin-left: 35%; 
+    width: 30%; 
+}
+
+.social_icons a:nth-child(even) {
+    margin: 0 1%; 
+}
+
+.social_icons a img:hover {
+    opacity: .6; 
+    transition: .3s; 
+}
+
+#brand_img {
+    margin-top: .5%; 
+}
+
+/* Landing Buttons */
+
+#landing_left {
+    float: left; 
+    margin-left: -8%
+}
+
+#landing_right {
+    float: right; 
+    margin-right: -8%; 
+}
+
+
+.landing_buttons {
+    margin-top: 9%
+}
+
+.landing_buttons h4 {
+    color: #fff; 
+    font-size: 2em; 
+}
+
+.landing_buttons button {
+    background-color: transparent; 
+    border: 2px solid #fff; 
+    border-radius: 0; 
+    color: #fff;  
+    width: 25%; 
+}
+
+/*
+.landing_buttons button:hover {
+    background-color: #fff; 
+    color: black; 
+    transition: .4s; 
+}
+*/
+
+/* Shutter Out Horizontal */
+.hvr-shutter-out-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.hvr-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+  color: black;
+}
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Media Queries*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+        .navbar-default .navbar-nav>li>a {
+        margin-left: 40%; 
+        width: 20%; 
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .navbar-default .navbar-nav>li>a {
+        margin-left: 40%; 
+        width: 20%; 
+    }
+    #landing_left {
+        margin-left: 0; 
+    }
+    #landing_right {
+        margin-right: 0; 
+    }
+    .landing_buttons button {
+        width: auto; 
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .navbar-default .navbar-toggle {
+        margin-left: 1%; 
+    }
+    .navbar-default .navbar-nav>li>a {
+        margin-left: 37.5%; 
+        width: 25%; 
+    }
+        #landing_left {
+        float: none; 
+        margin-left: 12.5%; 
+        width: 75%; 
+    }
+    #landing_right {
+        float:none;
+        margin-left: 12.5%; 
+        width: 75%; 
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .navbar-default .navbar-toggle {
+        margin-top: 2%; 
+    }
+    .social_icons {
+        margin-top: 2%; 
+    }
+    .navbar-default .navbar-nav>li>a {
+        margin-left: 32.5%; 
+        width: 35%; 
+    }
+    #brand_img {
+        margin-right: 1%; 
+    }
+    #landing_left {
+        float: none; 
+        margin-left: 12.5%; 
+        width: 75%; 
+    }
+    #landing_right {
+        float:none;
+        margin-left: 12.5%; 
+        width: 75%; 
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
