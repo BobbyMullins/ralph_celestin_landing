@@ -11,45 +11,44 @@
     <?php wp_head(); ?>  
 </head>
 <body> 
-    <div class='main_landing' style='background-image:url("<?php bloginfo('template_directory'); ?>/images/ralph_celestin_landing_image.png");'>
+    <div class='main_landing' style='background-image:url("<?php bloginfo('template_directory'); ?>/images/ralph_celestin_background.jpg");'>
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+              <span id="nav_icon" style="font-size:30px;cursor:pointer" onclick="openNav()">☰ Menu</span>
               <img id='brand_img' class='pull-right' src="<?php echo get_bloginfo('template_url') ?>/images/Rise%20Celestial%20Studios-hi-res-gold-outline.png">
               <div class='social_icons text-center'>
                   <a href='https://www.facebook.com/Boston2Philly/' target='_blank'><img src="<?php echo get_bloginfo('template_url') ?>/images/facebook_rounded_sqaure30x30.png" alt='Facebook Icon and Link'></a>
-                  <a href='https://www.instagram.com/ralphaworld/' target='_blank'><img  src="<?php echo get_bloginfo('template_url') ?>/images/Twitter_Social_Icon_Rounded_Square_Color.30x30.png" alt='Twitter Icon and Link'></a>
-                  <a href='https://twitter.com/boston2philly?lang=en' target='_blank'><img src="<?php echo get_bloginfo('template_url') ?>/images/instagram_logo30x30.png" alt='Instagram Icon and Link'></a>
+                  <a href='https://twitter.com/boston2philly?lang=en' target='_blank'><img  src="<?php echo get_bloginfo('template_url') ?>/images/Twitter_Social_Icon_Rounded_Square_Color.30x30.png" alt='Twitter Icon and Link'></a>
+                  <a href='https://www.instagram.com/ralphaworld/' target='_blank'><img src="<?php echo get_bloginfo('template_url') ?>/images/instagram_logo30x30.png" alt='Instagram Icon and Link'></a>
               </div>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav text-center">
-                <li><a class='hvr-underline-from-center' href="http://ralphcelestin.com/projects/">Projects</a></li>
-                <li><a class='hvr-underline-from-center' href="#">Auditions</a></li>
-                <li><a class='hvr-underline-from-center' href="http://ralphcelestin.com/biography/">Biography</a></li>
-                <li><a class='hvr-underline-from-center' href=" http://ralphcelestin.com/instagram/">Instagram</a></li>
-                <li><a class='hvr-underline-from-center' href="http://ralphcelestin.com/public-speaking/">Public Speaking</a></li>
-                <li><a class='hvr-underline-from-center' href="http://ralphcelestin.com/partners/">Partners</a></li>
-                <li><a class='hvr-underline-from-center' href="http://ralphcelestin.com/contact/">Contact</a></li>
-              </ul>
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <div class="overlay-content">
+                <a class='hvr-underline-from-center' href="http://ralphcelestin.com/projects/">Projects</a>
+                <!--<a class='hvr-underline-from-center' href="#">Auditions</a>-->
+                <a class='hvr-underline-from-center' href="http://ralphcelestin.com/biography/">Biography</a>
+                <a class='hvr-underline-from-center' href=" http://ralphcelestin.com/instagram/">Instagram</a>
+                <a class='hvr-underline-from-center' href="http://ralphcelestin.com/public-speaking/">Public Speaking</a>
+                <a class='hvr-underline-from-center' href="http://ralphcelestin.com/partners/">Partners</a>
+                <a class='hvr-underline-from-center' href="http://ralphcelestin.com/contact/">Contact</a>
+              </div>
             </div>
           </div>
         </nav>
         <div class="container-fluid landing_buttons">
           <div class="row">
-                <div id='landing_left' class="col-lg-6 col-md-6 col-12">
+                <div class='col-lg-6 col-md-6 col-md-push-3 col-sm-12 col-12 container-fluid'>
+                    <img class='landing_img img-responsive center-block' src="<?php echo get_bloginfo('template_url') ?>/images/ralph_celestin_landing_for_backgroundFINAL.jpg">
+                </div>
+                <div id='landing_left' class="col-lg-3 col-md-3 col-md-pull-6 col-sm-6 col-12">
                     <div class='text-center'>
                         <h4>Ralph A. Celestin</h4>
                         <a href='http://ralphcelestin.com/ralph_a_celestin_home/'><button id='btn1' type='button' class='btn btn-lg hvr-shutter-out-horizontal'>Enter</button></a>
                     </div>
                 </div>
-                <div id='landing_right' class="col-lg-6 col-md-6 col-12">
+                <div id='landing_right' class="col-lg-3 col-md-3 col-sm-6 col-12">
                     <div class='text-center'>
                         <h4>Rise Celestial Studios</h4>
                         <button id='btn2' type='button' class='btn btn-lg hvr-shutter-out-horizontal'>Enter</button>
