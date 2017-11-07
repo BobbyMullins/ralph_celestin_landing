@@ -10,9 +10,9 @@
     <link rel='stylesheet' href="<?php bloginfo('stylesheet_url'); ?>">
     <?php wp_head(); ?>  
 </head>
-<body> 
-    <div class='main_landing' style='background-image:url("<?php bloginfo('template_directory'); ?>/images/ralph_celestin_background.jpg");'>
-        <nav class="navbar navbar-default">
+<body style='background-image:url("<?php bloginfo('template_directory'); ?>/images/ralph_celestin_background.jpg");> 
+    <div class='main_landing' '>
+        <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container-fluid">
             <div class="navbar-header">
               <span id="nav_icon" style="font-size:30px;cursor:pointer" onclick="openNav()">☰ Menu</span>

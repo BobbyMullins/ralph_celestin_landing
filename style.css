@@ -1,7 +1,7 @@
 /*
 Theme Name: Custom Bootstrap Landing Page
 Theme URI: http://www.m3digital.herokuapp.com
-Description: Custom landing page developed by M3Digital </a>.
+Description: Custom landing page developed by M3Digital. 
 Author: Bobby Mullins
 Author URI: http://www.m3digital.herokuapp.com
 Version: 1.0
@@ -16,7 +16,7 @@ This simple theme was custom built by M3Digital using Bootstrap
 
 /* Main Content Styling */
 body {
-    background-image: url('Assets/ralph_celestin_background.jpg'); 
+    /*background-image: url('Assets/ralph_celestin_background.jpg'); */
     background-repeat: no-repeat; 
     background-position: top center; 
     background-size: cover; 
@@ -25,6 +25,7 @@ body {
         -o-background-size:cover;
     /*max-height: 100vh; */
     /*height: 100%; */
+    min-height: 400px;
 }
 
 .main_landing {
@@ -156,11 +157,12 @@ body {
 }
 
 .landing_buttons {
-    margin-top: 2%; 
-    margin-bottom: -10%; 
+    margin-top: 10%; 
+    margin-bottom: 10%; 
 }
 
 .landing_buttons h4 {
+    text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     color: #fff; 
     font-size: 2em; 
 }
@@ -302,11 +304,12 @@ body {
     }
     
     .social_icons {
-        margin-top: -8%; 
+        float: right;
+        margin-top: 2%; 
     }
     
     #brand_img {
-        margin-right: 2%; 
+        display: none; 
     } 
 
     .landing_img {
@@ -324,6 +327,14 @@ body {
     .main_landing {
         height: 100vh;
         min-height: 750px;
+    }
+    
+    .social_icons {
+        display: none;
+    }
+    
+    #brand_img {
+        display: none; 
     }
     
     .overlay a {
